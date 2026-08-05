@@ -16,4 +16,14 @@
 
         `cut -d " " -f 5 file.log | sort -u | wc -l`
     
-    
+## `find` missing file
+1. With a known name
+    - find the file starting from base baths (`~/`) is the production standard approach.
+
+        `find "~/" -name "filename-or-folder"`
+
+## find payment endpoint and status code
+From file.log, find:
+
+- The total number of requests to /api/v1/payments (any method, any status code).
+- The number of those payment requests that returned HTTP status 502.
