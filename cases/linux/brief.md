@@ -3,12 +3,17 @@
         
         `grep -ci 'error' file.log`
 
-2. Sort-Count-Filter
+2. Filter-Sort-Count
     - Count number of unique IPs at known location in the file
 
-        `grep "^[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*" file.log` 
+        extract >> sort unique >> count : `grep "^[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*" file.log | sort | uniq | wc -l`
         
         OR 
         
-        `cut -d " " -f 5 file.log`
-    - 
+        `cut -d " " -f 5 file.log | sort | uniq | wc -l`
+
+        OR
+
+        `cut -d " " -f 5 file.log | sort -u | wc -l`
+    
+    
