@@ -27,3 +27,11 @@ From file.log, find:
 
 - The total number of requests to /api/v1/payments (any method, any status code).
 - The number of those payment requests that returned HTTP status 502.
+
+## fix scripting file that summarizes log file
+- After fixing the script, run it. It should print exactly three lines:
+
+    - error_count:<number>
+    - unique_error_ips:<number>
+    - top_error_endpoint:<METHOD> <PATH>
+    
