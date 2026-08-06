@@ -10,4 +10,6 @@
 - consumers
 - consumer groups
 - consumer offsets
-- kafka brokers
+- kafka brokers / bootstrap server
+- topic replication factor
+- 
