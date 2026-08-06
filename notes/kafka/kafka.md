@@ -49,7 +49,8 @@
             ![kafka to PATH](image-1.png)
         - save, exit and reload bash.
 
-    - Now you can call `kafka-topics.sh` from the command line.
-    
+    - Now you can call binary files (for example: `kafka-topics.sh`) from the command line.
+    - To start kafka inn kraft mode, follow this: [quickstart link](https://kafka.apache.org/quickstart/)
+
 
 
