@@ -17,6 +17,8 @@
     - producer acknowledgements (acks 0, 1 all)
     - zookeeper (present in 2+ | replaced with kafka raft in 3+ | not available in 4+)
 2) Setup
+3) Kafka CLI
+    - kafka-topics.sh
 
 
 ## setup for local dev
@@ -46,11 +48,21 @@
         - open the .bashrc file: `nano .bashrc`
         - scroll down to the last line to add the kafka bin path to PATH
             `export PATH="$PATH:/path/to/kafka/bin"` OR `PATH="$PATH:/path/to/kafka/bin"` depending on which shell you are working from or how your `.bashrc` file is structured.
-            ![kafka to PATH](image-1.png)
         - save, exit and reload bash.
 
-    - Now you can call binary files (for example: `kafka-topics.sh`) from the command line.
+    - Now you can call binary files (for example: `kafka-topics.sh`) from the terminal.
     - To start kafka inn kraft mode, follow this: [quickstart link](https://kafka.apache.org/quickstart/)
+
+
+## kafka-topics.sh
+- list
+- create
+- describe
+- delete
+- replication-factors
+- partitions
+
+## kafka-console-producer.sh
 
 
 
