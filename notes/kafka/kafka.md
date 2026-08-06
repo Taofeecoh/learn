@@ -21,6 +21,13 @@
 
 ## setup for local dev
 - docker compose
+    - [conduktor repo for kafka installation](https://github.com/conduktor/kafka-stack-docker-compose)
+- Windows
+    - Install WSL2
+    - open Ubuntu terminal to launch linux
+    - install Java JDK (say version 21 as at documenting this)
+    - download kafka 
+    - extract contents on WSL2
+    - setup path environment variables for access to kafka binaries
     
-    [conduktor repo for kafka installation](https://github.com/conduktor/kafka-stack-docker-compose)
-- 
+
