@@ -25,9 +25,18 @@
 - Windows
     - Install WSL2
     - open Ubuntu terminal to launch linux
-    - install Java JDK (say version 21 as at documenting this)
-    - download kafka 
+    - install Java JDK (say version 21 as at documenting this): 
+        - [link](https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/generic-linux-install.html)
+        - follow the prompts
+    - download kafka from binary section
+        
+        - [link](https://kafka.apache.org/community/downloads/)
+
+        ![screenshot pointing kafka binary section in download page](image.png)
+        
+        - copy the link and paste in terminal with `wget` (`wget https://archive.apache.org/dist/kafka/4.0.0/kafka_2.13-4.0.0.tgz`)
+        - unzip file : 
     - extract contents on WSL2
     - setup path environment variables for access to kafka binaries
-    
+
 
