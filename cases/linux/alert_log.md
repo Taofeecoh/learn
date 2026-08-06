@@ -34,4 +34,3 @@ From file.log, find:
     - error_count:<number>
     - unique_error_ips:<number>
     - top_error_endpoint:<METHOD> <PATH>
-    
