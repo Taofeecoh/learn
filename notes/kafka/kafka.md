@@ -34,9 +34,22 @@
 
         ![screenshot pointing kafka binary section in download page](image.png)
         
-        - copy the link and paste in terminal with `wget` (`wget https://archive.apache.org/dist/kafka/4.0.0/kafka_2.13-4.0.0.tgz`)
-        - unzip file : 
-    - extract contents on WSL2
+        - copy the link and paste in terminal with `wget`: (`wget https://archive.apache.org/dist/kafka/4.0.0/kafka_2.13-4.0.0.tgz`)
+    - unzip and extract binary file contents
+        - `tar -xvzf kafka-zipfilename.tgz`
+    
     - setup path environment variables for access to kafka binaries
+        - `find` the unzipped `kafka_2.13-4.0.0` directory from your working directory.
+        - `cd` into bin of the directory: `cd kafka_2.13-4.0.0/bin`
+        - `pwd' and copy file path
+        - change back to home dir : `cd ~/`
+        - open the .bashrc file: `nano .bashrc`
+        - scroll down to the last line to add the kafka bin path to PATH
+            `export PATH="$PATH:/path/to/kafka/bin"` OR `PATH="$PATH:/path/to/kafka/bin"` depending on which shell you are working from or how your `.bashrc` file is structured.
+            ![kafka to PATH](image-1.png)
+        - save, exit and reload bash.
+
+    - Now you can call `kafka-topics.sh` from the command line.
+    
 
 
