@@ -34,3 +34,7 @@ From file.log, find:
     - error_count:<number>
     - unique_error_ips:<number>
     - top_error_endpoint:<METHOD> <PATH>
+
+## fact check config file
+"...I want to make sure the config wasn't clobbered during last night's maintenance window."
+
