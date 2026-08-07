@@ -36,5 +36,14 @@ From file.log, find:
     - top_error_endpoint:<METHOD> <PATH>
 
 ## fact check config file
-"...I want to make sure the config wasn't clobbered during last night's maintenance window."
+
+```
+I want to make sure the config wasn't clobbered during last night's maintenance window.
+```
+
+## investigate backup archive
+
+```
+The monthly backup archive monthly_backup_2026-05.tar.gz is in your workspace. Somewhere inside it there's an April deployment log CSV. I need to know how many deployments had a failed status. Extract the archive, find the right file, and give me the count.
+```
 
