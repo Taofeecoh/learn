@@ -58,3 +58,8 @@ The warehouse manager needs a quick report on out-of-stock and damaged inventory
 
 "Build me a three-line stock report. First line should be the header STOCK CHECK REPORT. Second line: how many SKUs are completely out of stock (quantity is zero). Third line: how many items are marked as damaged. Write it to a file called report.txt in your working directory, then print it. I want the format exactly as described — we are feeding it into a dashboard script."
 ```
+
+## locate empty files
+```
+"The staging directory has data files spread across several subdirectories. Some of the transfers failed silently and created 0-byte empty files. I need two numbers: (1) how many total regular files are in the staging tree, and (2) how many of those are empty (0 bytes). We need to re-trigger those uploads."
+```
