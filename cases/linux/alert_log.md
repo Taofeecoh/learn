@@ -52,4 +52,9 @@ The monthly backup archive monthly_backup_2026-05.tar.gz is in your workspace. S
 The SRE team is planning a maintenance window and needs to know exactly how many cron jobs are active on the production host — and which ones fire multiple times per hour.
 ```
 
-##
+## build stock report
+```
+The warehouse manager needs a quick report on out-of-stock and damaged inventory: 
+
+"Build me a three-line stock report. First line should be the header STOCK CHECK REPORT. Second line: how many SKUs are completely out of stock (quantity is zero). Third line: how many items are marked as damaged. Write it to a file called report.txt in your working directory, then print it. I want the format exactly as described — we are feeding it into a dashboard script."
+```
