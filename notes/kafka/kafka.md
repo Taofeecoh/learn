@@ -55,12 +55,18 @@
 
 
 ## kafka-topics.sh
-- list
-- create
-- describe
-- delete
-- replication-factors
-- partitions
+- list : `kafka-topics.sh --bootstrap-server localhost:9092 --list`
+- create : `kafka-topics.sh --bootstrap-server localhost:9092 --create --topic topicname`
+- describe : `kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic topicname`
+- partitions :  `kafka-topics.sh --bootstrap-server localhost:9092 --topic topicname --create --partitions 3`
+- replication-factors :
+
+    `kafka-topics.sh --bootstrap-server localhost:9092 --topic topicname --create --partitions 3 --replication-factor 2`
+    
+    (this won't work on localhost deployment because replication factors cannot be more than brokers and local deployment uses 1 broker)
+
+- delete : `kafka-topics.sh --bootstrap-server localhost:9092 --delete` (only works if delete.topic.enable=true)
+
 
 ## kafka-console-producer.sh
 
