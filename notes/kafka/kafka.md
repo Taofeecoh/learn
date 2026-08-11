@@ -70,5 +70,3 @@
 
 ## kafka-console-producer.sh
 
-
-
