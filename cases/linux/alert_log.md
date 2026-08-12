@@ -63,3 +63,4 @@ The warehouse manager needs a quick report on out-of-stock and damaged inventory
 ```
 "The staging directory has data files spread across several subdirectories. Some of the transfers failed silently and created 0-byte empty files. I need two numbers: (1) how many total regular files are in the staging tree, and (2) how many of those are empty (0 bytes). We need to re-trigger those uploads."
 ```
+
