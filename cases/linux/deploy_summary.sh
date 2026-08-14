@@ -2,7 +2,7 @@
 # deploy_summary.sh — Weekly deploy summary report
 # Reads deploy_history.csv and prints a 3-line summary
 
-CSVFILE="$DATA_DIR/deploy_history.csv"
+CSVFILE="path/to/file.csv"
 
 # Count total deployments
 TOTAL=$(wc -l < "$CSVFILE" | tr -d ' ')
