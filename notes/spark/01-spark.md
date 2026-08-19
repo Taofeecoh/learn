@@ -2,7 +2,7 @@
 
 ## single vs multi threaded
 
-![alt text](image.png)
+![alt text](../../asset/spark-session1.png)
 
 ## cores : pandas vs polars : instruction
 
