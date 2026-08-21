@@ -28,3 +28,10 @@ Process of making data usbale and consistent
 
 ## ETL vs ELT
 
+# Networking
+
+## IP Address
+## Ports
+## Client-Server Architecture
+## 
+
