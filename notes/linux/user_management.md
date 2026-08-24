@@ -12,3 +12,22 @@
 - listing users: `/etc/passwd`
 - `user@password@user_id@user_group@home_directory-or-default_directory@default_shell`
 
+---
+## File permission
+- Type of users : users (u) , groups (g) , others (o)
+- Levels of file permission : r, w, x
+- Types of permission: + / -
+
+## Changing Permissions
+- chmod user(u) + write(w)
+  - `+/-`
+- Octal Mode (Numeric)
+  - `4:read`, `2:wriite`, `1:execute`
+- 3 digits : user|group|others
+ 
+<img width="427" height="296" alt="image" src="https://github.com/user-attachments/assets/2e0d988c-36c0-4c2c-a67e-1956e9398176" />
+
+
+
+
+
