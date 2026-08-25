@@ -4,7 +4,18 @@
 ### Root: The superuser or admin with no restricted access
 
 ----
-## Workflow of user management
+
+### User Management
+```
+As a user on a machine, you need another user to access some of the files you've been working with on the same machine but they don't have an `account`. How do you go about this?
+```
+
+By adding a new user to the machine and assigning the minimum permission needed for them to operate on the machine.
+## `sudo adduser` or `sudo useradd`?
+
+By `sudo adduser <user-name>`, you'll be creating a new user and also assigning them to a group, assign them a password and other biodata on creation
+
+### Workflow of user management
 - adduser (detailed)  or useradd (no details)
 - add attributes to non-detailed user: `sudo passwd user`; `sudo usermod user --shell path/to/shell`
 - sudo (super user do)
@@ -12,8 +23,6 @@
 - listing users: `/etc/passwd`
 - `user@password@user_id@user_group@home_directory-or-default_directory@default_shell`
 
-### User Management
-Suppose you are working on a file 
 
 ---
 ## File permission
