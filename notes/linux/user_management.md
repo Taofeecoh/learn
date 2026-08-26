@@ -11,13 +11,16 @@ As a user on a machine, you need another user to access some of the files you've
 ```
 
 By adding a new user to the machine and assigning the minimum permission needed for them to operate on the machine.
-## `sudo adduser` or `sudo useradd`?
 
-By `sudo adduser <user-name>`, you'll be creating a new user and also assigning them to a group, assign them a password and other biodata on creation
+By `sudo adduser <user-name>`, you'll be creating a new user and also assigning them to a group, a password and other biodata on creation.
+
+- `sudo adduser` or `sudo useradd`?
+- `sudo usermod -aG <group_name> <user>` (append user to existing groups)
+- `sudo usermod -G <group_name> <user>` (change use's primary group)
 
 ### Workflow of user management
 - adduser (detailed)  or useradd (no details)
-- add attributes to non-detailed user: `sudo passwd user`; `sudo usermod user --shell path/to/shell`
+- add attributes to non-detailed user: `sudo passwd user`; `sudo usermod user --shell path/to/shell`  
 - sudo (super user do)
 - su (switch user)
 - listing users: `/etc/passwd`
