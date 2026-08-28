@@ -56,7 +56,8 @@ The decision to ingest data in `batch` or `streaming` formats is highly influenc
 - **Batch**: processing of data in batches.
 - **Micro-batch**: processing of data in batches but a bit more frequent than batch.
 - **Streaming**: continuous reading of data as they are generated.
-![alt text](image.png)
+
+![alt text](../../asset/etl-image.png)
 
      **<u>Methods of streaming</u>**
      - Windowing
@@ -65,7 +66,8 @@ The decision to ingest data in `batch` or `streaming` formats is highly influenc
      - Session
      - Time agnostic
 
-     ![alt text](image-1.png)
+![alt text](../../asset/etl-image-1.png)
+
 #### Volume
 #### Format
 #### Processing
@@ -164,7 +166,8 @@ elt/etl
 build trust as a DE: ensuring to deliver quality data that meets business needs, always.
 
 ## Managing cost as a DE
-![alt text](image-3.png)
+
+![alt text](../../asset/etl-image-3.png)
 
 
 
