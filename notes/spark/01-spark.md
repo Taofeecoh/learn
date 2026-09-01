@@ -15,7 +15,7 @@
 ## mapreduce: the problem with mapreduce
 - does things on disk (disk i/o) whereas spark is `in-memory` processing engine
 
-## Interaction with spark
+## Interaction with spark (divisions of working with Spark)
     - API
     - Spark house => Spark Architecture
     - Scripts/Jobs in data lake which is prompted to submit to spark architecture
@@ -27,9 +27,12 @@
 
 - YARN
     - has node manager for allocating resources
+    - many other components
+    
 - Driver: 
     - usually one per application submitted to the cluster
-    - distributes the task
+    - distributes/create the task
+    - co-ordinate the executors
 - Executors
 - Catalyst Optimizer
 
@@ -39,4 +42,11 @@
 - Task scheduler
 - DagBackend
 
+## Scoping
+![alt text](image.png)
 
+# Spark Applications
+This is the collection of jobs that run within a run.
+
+from big to small
+app => job => stage => task
