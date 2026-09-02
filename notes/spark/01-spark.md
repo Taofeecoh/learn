@@ -28,7 +28,7 @@
 - YARN
     - has node manager for allocating resources
     - many other components
-    
+
 - Driver: 
     - usually one per application submitted to the cluster
     - distributes/create the task
@@ -38,15 +38,24 @@
 
     ![alt text](../../asset/spark3.png)
 
-- Dag scheduler
-- Task scheduler
+- Dag scheduler: Dtermines the stages and task per executor (?verify)
+- Task scheduler: 
 - DagBackend
 
 ## Scoping
 ![alt text](image.png)
 
-# Spark Applications
+## Spark Applications
 This is the collection of jobs that run within a run.
 
-from big to small
+in descending order
 app => job => stage => task
+
+## Cluster Planning
+
+![alt text](image-1.png)
+
+
+- YARN launches the driver first
+- However, the driver needs a specified amount of memory that must be met. For instance 2GB
+- Which brings us to the fact that the remaining memory on that node some times is not 
