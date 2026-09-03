@@ -43,7 +43,7 @@
 - DagBackend
 
 ## Scoping
-![alt text](image.png)
+![alt text](../../asset/spark5.png)
 
 ## Spark Applications
 This is the collection of jobs that run within a run.
@@ -53,9 +53,11 @@ app => job => stage => task
 
 ## Cluster Planning
 
-![alt text](image-1.png)
+![alt text](../../asset/spark6.png)
 
 
 - YARN launches the driver first
 - However, the driver needs a specified amount of memory that must be met. For instance 2GB
-- Which brings us to the fact that the remaining memory on that node some times is not 
+- Which brings us to the fact that the remaining memory on that node some times is not enough for the executor(s)
+- Hence, a better practice to allocate the same memory to all nodes while also leaving room for allowance memory for other processes.
+ 
