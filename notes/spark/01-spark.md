@@ -21,6 +21,11 @@
     - Scripts/Jobs in data lake which is prompted to submit to spark architecture
 
 ## Spark Architecture
+- Cluster Manager
+- Driver
+- Worker Node
+- Executor
+- Task
 
 ### Application submit workflow
 ![app submit workflow](../../asset/spark4.png)
