@@ -1,3 +1,4 @@
 ##
 - Subquery
 - CTE
+- Window functions
