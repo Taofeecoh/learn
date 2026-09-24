@@ -69,5 +69,6 @@ app => job => stage => task
 
     - Spark jobs is determined by the number of actions
     - Spark stage is determined by the number of wide transformations.
-    - Spark executor runs on *`jvm container/machine`*. However, the `jvm` needs a memory allocation of its own.
-    
+    - Spark executor and driver run in separate *`jvm container`* of their own. However, the `jvm` needs its indiviual memory allocation.
+        - `jvm` memory allocation is 10% of the executor memory assigned.
+
