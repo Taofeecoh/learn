@@ -69,6 +69,12 @@ app => job => stage => task
 
     - Spark jobs is determined by the number of actions
     - Spark stage is determined by the number of wide transformations.
-    - Spark executor and driver run in separate *`jvm container`* of their own. However, the `jvm` needs its indiviual memory allocation.
+    - Spark executor and driver run in separate *`jvm container`* of their own.
+        - However, the `jvm` needs its indiviual memory allocation, a default allocation is `384mb`.
         - `jvm` memory allocation is 10% of the executor memory assigned.
+        - The default memory changes based on which is more between the `10%` and the default `384mb`.
 
+## Capacity Planning => About the executors
+- When an eecutor is allocated memory, spark by default takes `300mb`
+
+![alt text](../../asset/spark7.png)
