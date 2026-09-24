@@ -56,13 +56,14 @@ This is the collection of jobs that run within a run.
 in descending order
 app => job => stage => task
 
-## Cluster Planning
+## Cluster Memory Planning
 
 ![alt text](../../asset/spark6.png)
 
 
 - YARN launches the driver first
 - However, the driver needs a specified amount of memory that must be met. For instance 2GB
+    - The driver memory being enough is dependent on the query. E.g `.collect()`, or `broadcast-join`.
 - Which brings us to the fact that the remaining memory on that node some times is not enough for the executor(s)
 - Hence, a better practice to allocate the same memory to all nodes while also leaving room for allowance memory for other processes.
  
