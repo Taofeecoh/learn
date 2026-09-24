@@ -66,3 +66,8 @@ app => job => stage => task
 - Which brings us to the fact that the remaining memory on that node some times is not enough for the executor(s)
 - Hence, a better practice to allocate the same memory to all nodes while also leaving room for allowance memory for other processes.
  
+
+    - Spark jobs is determined by the number of actions
+    - Spark stage is determined by the number of wide transformations.
+    - Spark executor runs on *`jvm container/machine`*. However, the `jvm` needs a memory allocation of its own.
+    
