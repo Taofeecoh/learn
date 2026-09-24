@@ -76,6 +76,7 @@ app => job => stage => task
         - The default memory changes based on which is more between the `10%` and the default `384mb`.
 
 ## Capacity Planning => About the executors
-- When an eecutor is allocated memory, spark by default takes `300mb`
+- When an executor is allocated memory, spark takes `300mb` called `reserved memory` by default. No customizable.
+- 
 
 ![alt text](../../asset/spark7.png)
