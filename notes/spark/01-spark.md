@@ -71,15 +71,28 @@ app => job => stage => task
     - Spark jobs is determined by the number of actions
     - Spark stage is determined by the number of wide transformations.
     - Spark executor and driver run in separate *`jvm container`* of their own.
-        - However, the `jvm` needs its indiviual memory allocation, a default allocation is `384mb`.
+        - However, the `jvm` needs its indiviual memory allocation (`memory overhead`), a default allocation is `384mb`.
         - `jvm` memory allocation is 10% of the executor memory assigned.
-        - The default memory changes based on which is more between the `10%` and the default `384mb`.
+        - The `memory overhead value` changes based on which is more between the `10%` and the default `384mb`.
 
 ## Capacity Planning => About the executors
 - `Reserved Memory`: When an executor is allocated memory, spark takes `300mb` called `reserved memory` by default. No customizable.
-- `User Memory`: Takes a default `60%` of the remaining memory after `reserved memory` but configurable.
+- `User Memory`: Takes a default `40%` of the remaining memory after `reserved memory` but configurable.
 - `Unified Memory`: From what's left after `user memory`, this is shared into two: `execution` and `storage` memory; `50%` each: 
 
 ![alt text](../../asset/spark7.png)
 
+## EMR Planning
+- Memory or Compute Optimized Nodes
+
+- Master/Primary Node config
+- 
+
+
+## Spark deployment mode
+- ### Client mode
+    - The driver is launched on the node that has the spark application.
+    - Risky for prodcution set up.
+- ### Cluster mode
+    - 
 
