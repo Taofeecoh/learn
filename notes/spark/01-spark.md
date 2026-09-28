@@ -85,8 +85,7 @@ app => job => stage => task
 ## EMR Planning
 - Memory or Compute Optimized Nodes
 
-- Master/Primary Node config
-- 
+- Master/Primary Node configuration
 
 
 ## Spark deployment mode
