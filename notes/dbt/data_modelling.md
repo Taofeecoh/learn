@@ -22,7 +22,10 @@
         - What should be tables and what should be views?
         - transform the previous phases to database languages
 
-
+    ### The Gold Layer
+        - Where mmodelling is done
+        - Always referencing the silver layer
+        - If
 
 ## Views
 - useful to not re-compute table queries.
