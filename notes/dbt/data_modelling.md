@@ -29,7 +29,12 @@
         
         ### Surrogate key
         - This is a system/warehouse generated unique identifier attachedd to *a record/row* of a table. 
+        - It is used to track changes in a way to a record's original source_id. e.g if a payment's status changed from `pending` to `confirmed`, in order to preserve the record and not overwrite the primary `customer_id`, a `surrogate_key` monitors that and assigns a new key to that record because it is different although for the same customer.
+        - Tyoically in cases of building `SCD Type-2`
+        - The suffix is always `_key`.
+        - Could be defined with `DDL-based generation` or ``SQL based window functions` like `ROW_NUMBER()`.
         - 
+
 
 
 ## Views
