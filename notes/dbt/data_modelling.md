@@ -23,9 +23,11 @@
         - transform the previous phases to database languages
 
     ### The Gold Layer
-        - Where mmodelling is done
-        - Always referencing the silver layer
-        - When joins are done to build dimensional models, the master table must always be the table to join on; `left join` on a master table from the silver is best practice to preserve truthfulness.
+    - Where mmodelling is done
+    - Always referencing the silver layer
+    - When joins are done to build dimensional models, the master table must always be the table to join on;  `left join` on a master table from the silver is best practice to preserve truthfulness.
+    - 
+
 
 ## Views
 - useful to not re-compute table queries.
