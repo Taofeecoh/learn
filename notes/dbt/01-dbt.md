@@ -22,3 +22,10 @@
 
 ## Analyses
 - Could be for storing archived models
+
+
+
+## Workflow of setup
+- install database adapter : `pip install dbt-<database>`
+- init project with name and specify profile directory or skip-setup : `dbt init <project-name> --skip-profile-setup`
+-
