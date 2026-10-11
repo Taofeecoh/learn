@@ -33,7 +33,6 @@
         - Tyoically in cases of building `SCD Type-2`
         - The suffix is always `_key`.
         - Could be defined with `DDL-based generation` or ``SQL based window functions` like `ROW_NUMBER()`.
-        - 
 
 
 
