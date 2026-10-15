@@ -5,7 +5,7 @@
 -
 
 ## Models
-- 
+- Diiferent data landing zone.~
 
 
 ## Seed
@@ -28,4 +28,3 @@
 ## Workflow of setup
 - install database adapter : `pip install dbt-<database>`
 - init project with name and specify profile directory or skip-setup : `dbt init <project-name> --skip-profile-setup`
--
