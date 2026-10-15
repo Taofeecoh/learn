@@ -5,8 +5,8 @@
 -
 
 ## Models
-- Diiferent data landing zone.~
-
+- Diiferent data landing zones: `raw, staging, mart`. 
+- Could be named anything based on company.
 
 ## Seed
 - Static data are kept as mapping table/data in this folder
@@ -22,8 +22,6 @@
 
 ## Analyses
 - Could be for storing archived models
-
-
 
 ## Workflow of setup
 - install database adapter : `pip install dbt-<database>`
