@@ -92,6 +92,7 @@ app => job => stage => task
 - ### Client mode
     - The driver is launched on the node that has the spark application.
     - Risky for prodcution set up.
+
 - ### Cluster mode
     - 
 
