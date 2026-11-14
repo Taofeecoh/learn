@@ -6,5 +6,7 @@
 ### Overview
 - Why terraform?
 - Terraform core
-- The state file
+- The state file and lock
 - Terraform commands `init, plan, apply, validate, fmt`
+- Terraform providers
+- Terradorm resources
