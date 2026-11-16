@@ -22,7 +22,7 @@
         - Needs many resources
 
 
-    ###  *Master Node* runs:
+    ###  *Master Node / Control Plane* runs:
     -
         - other processes, importantly the api-server; responsible for receiving tasks from clients
         - also runs controller manager
@@ -33,11 +33,11 @@
     
     ### Pods and Nodes
     -
-        - Smallest Unit in kubernetes running in a node
-        - Runs multiple instances (containers) of an appli ation but multiple pods can run in a *`Node`*
-        - On the networking side, each has `( ! not containers in the pod)` gets its `IP Address`.
+        - Pod is the smallest unit in kubernetes' components running in a node
+        - Runs multiple instances (containers) of an application but multiple pods can run in a *`Node`*
+        - On the networking side, each has `( ! not containers in the pod)` its `IP Address`.
         - Ephemeral (can shut down easily).
-        - Typically called deployments because of replica definitions to allow self-healing
+        - Typically called deployments because of replica definitions.
         - While pod is an abstraction on top of containers (let's say similar to its management of containers), deployemnt is an abstraction of pods (meaning it manages pods)
     
     ### Services and Ingress
@@ -62,7 +62,7 @@
     -
         - Configmap is for defining non-confidential credentials
         - Secrets components is for managing sensitive credentials
-        - usually, when something needs to change in an app, a new version is built in image, pushed and pulled back but with ConfigMaps, it's not
+        - usually, when something needs to change in an app, a new version is built in image, pushed and pulled back but with ConfigMaps, it's not.
 
     ### Volumes
     -
