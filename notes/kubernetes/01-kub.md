@@ -24,12 +24,15 @@
 
     ###  *Master Node / Control Plane* runs:
     -
-        - other processes, importantly the api-server; responsible for receiving tasks from clients
-        - also runs controller manager
-        - scheduler
-        - etcd : back up and restore
+        - other processes, importantly the api-server; 
+            - responsible for receiving tasks from clients and communicating it with etcd
+        - also runs controller manager:
+            - keeps the cluster in sync with what is desired and what the actual state is.
+        - scheduler:
+            - determines what node is best for running what pod.
+        - etcd : responsible for the current state of any component.
         - virtual network
-        - at least 2 masters or more should be prioritized
+        - at least 2 masters or more should be prioritized in production cluster
     
     ### Pods and Nodes
     -
