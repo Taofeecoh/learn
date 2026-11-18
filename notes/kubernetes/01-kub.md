@@ -82,12 +82,11 @@
     - To persist data in local or remote storage
 
 
-
-    ### Pod Blueprints: Deployements and StatefulSets
+- Pod Blueprints: Deployements and StatefulSets
     -
-        - These are both abstractions of pods; however, `deployements` allow replica of applications that are not stateful
-        - `statefulSet` allow replica of applications that are stateful such as database.
-        - `deployment of statefulSets applications on Kubernetes is tedious; usually advised to manage them other ways`
+     - These are both abstractions of pods; however, `deployements` allow replica of applications that are not stateful
+    - `statefulSet` allow replica of applications that are stateful such as database.
+    - `deployment of statefulSets applications on Kubernetes is tedious; usually advised to manage them other ways`
     
     
     
