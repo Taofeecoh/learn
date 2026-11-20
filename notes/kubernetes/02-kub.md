@@ -38,7 +38,7 @@ All defined configurations of k8s cluster are managed by the `control plane -> C
 
 - Minikube
     -
-    This is the production equivalent of testing k8s jobs locally.
+    - This is the production equivalent of testing k8s jobs locally.
     - Comprises of one node for managing worker and master processes.
 
 
@@ -48,5 +48,10 @@ All defined configurations of k8s cluster are managed by the `control plane -> C
 
 - Minikube Installation
     -
-    - df
-    - js
+    - To run minikube locally, there must be a virtual-machine or container manager like docker or similar as a driver.
+    - [install minikube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download)
+
+- Interact with minikube
+    - 
+    - `minkube start` : to start cluster. This should automatically pick up the docker driver if installed but if cluster fails to start with docker installed, then ; `minikube start --driver docker` 
+    - `minikube status` : to verify minikube cluster state
